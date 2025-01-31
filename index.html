@@ -6,17 +6,54 @@
     <title>Ryan's Profile Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <h2>A showcase of my coding journey:</h2>
-        <!--Now adding an image to show me as relatable-->
-        <img src="Images/ImBehindSevenScreens.webp" alt="An AI generated image (so it's copyright free lol) of a generic coding guy with tons of monitors">
-        <p>I have created a few programs and sites before, but I've always just taught myself on the go.<br>
-            Now I'm getting formal education to fill in the gaps, and utilise my talents properly!</p>
-        <h3>Here are examples of me adding the href tag to show I know how to add hyperlinks:</h3>
-        <ul>
-            <li><a href="https://flashmuseum.org/the-scarlet-room/">One of my favourite Escape Room games as a teenager</a></li>
-            <i>-Sadly, the jumpscare when you press tab no longer seems to work.</i>
-            <li><a href="https://www.positive.news/">A site with only positive news</a></li>
-        </ul>
-    </body>
+<body>
+    <!--Navigation section-->
+    <div class = "nav-section">
+        <nav>
+            <a href="#home">Front page</a>
+            <a href="#about">About Me</a>
+            <a href="#links">Links</a>
+        </nav>
+    </div>
+
+    <!--Header section-->
+    <div class="header">
+        <h2 id="home">A showcase of my coding journey:</h2>
+    </div>
+
+    <!--Main section-->
+    <div class="main-section">
+        <!--About section-->
+        <div class="about-section" id="about">
+            <p>I have created a few programs and sites before, but I've always just taught myself on the go.<br>
+            Now I'm getting formal education to fill in the gaps, and utilise my talents properly!<br><br>
+            Whilst that might mean this website doesn't <i>look</i> the best visually, it's only because I'm using it as a playground to try out different <abbr>HTML</abbr> tricks.<br><br>
+            For example: <i>This</i> was italicised using <b>&lt;i&gt;</b> but <em>this</em> was done using <strong>&lt;em&gt;</strong>! 
+            These were skills I picked up from my course at <cite><a href="https://www.itonlinelearning-academy.com/" target="_blank">IT Online Learning</a></cite>.<br>
+            I'm also using <b>&lt;span&gt;</b> to set <span style="color:red; text-decoration: underline;">custom in-line styling.</span>
+            </p>
+        </div>
+
+        <!--Image section-->
+        <div class="image-section">
+            <img src="Images/ImBehindSevenScreens.webp" alt="An AI generated image (so it's copyright free lol) of a generic coding guy with tons of monitors" id="normalImage">
+            <img src="Images/ImBehindSevenScreensHover.webp" alt="Stop it, you." id="hoverImage">
+        </div>
+
+        <!--Links section-->
+        <div class="links-section" id="links">
+            <h3>Here are examples of me adding the <abbr>href</abbr> tag to show I know how to add hyperlinks:</h3>
+            <ul>
+                <li><a href="https://flashmuseum.org/the-scarlet-room/">One of my favourite Escape Room games as a teenager</a></li>
+                <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Sadly, the jumpscare when you press tab no longer seems to work.</i>
+                <li><a href="https://www.positive.news/">A site with only positive news</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <div class="footer-section">
+        <a href="mailto:RyanHornsby@outlook.com"><p>&copy; 2025 Ryan Hornsby<sup>TM</sup></p></a>
+    </div>
+</body>
 </html>
